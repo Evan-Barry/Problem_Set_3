@@ -1,6 +1,6 @@
 public interface Transactable {
 
-    public void lodge();
-    public void withdraw();
+    void lodge(double amount);
+    void withdraw(double amount);
 
 }

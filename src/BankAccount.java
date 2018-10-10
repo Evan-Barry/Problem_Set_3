@@ -3,20 +3,6 @@ public abstract class BankAccount implements Transactable, Taxable {
     protected String name;
     protected int accnum;
 
-    @Override
-    public void lodge() {
-
-    }
-
-    @Override
-    public void withdraw() {
-
-    }
-
-    @Override
-    public double calcTax() {
-        return 0;
-    }
 
     public String getName()
     {
@@ -37,4 +23,8 @@ public abstract class BankAccount implements Transactable, Taxable {
     {
         this.accnum = accnum;
     }
+
+
+
+
 }

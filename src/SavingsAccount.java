@@ -23,4 +23,27 @@ public class SavingsAccount extends BankAccount{
         setAccnum(accnum);
         setBalance(balance);
     }
+
+    @Override
+    public void lodge(double amount) {
+       setBalance(getBalance() + amount);
+   }
+
+    @Override
+    public void withdraw(double amount) {
+        setBalance(getBalance() - amount);
+    }
+
+    @Override
+    public double calcTax() {
+
+        if(getBalance() <= 34550)
+        {
+            return getBalance()* 0.2;
+        }
+        else
+        {
+            return getBalance() * 0.4;
+        }
+    }
 }
