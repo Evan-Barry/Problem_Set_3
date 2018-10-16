@@ -27,10 +27,4 @@ public class Laptop extends Computer {
                 "\nMemory Size:\t" + getMemory().getSize() +
                 "\nTouch Screen:\t" + hasTouchScreen();
     }
-
-    @Override
-    public void setID(String id)
-    {
-        super.setID(id);
-    }
 }

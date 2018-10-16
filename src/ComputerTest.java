@@ -22,12 +22,7 @@ public class ComputerTest {
 
             else if(compType == 'l' || compType == 'L')
             {
-                String make = JOptionPane.showInputDialog("Enter make of laptop");
-                String type = JOptionPane.showInputDialog("Enter type of memory");
-                int size = Integer.parseInt(JOptionPane.showInputDialog("Enter amount of memory)"));
-                boolean touchScreen = Boolean.parseBoolean(JOptionPane.showInputDialog("Do you want a touch screen (true or false)"));
-
-                c = new Laptop(make, type, size, touchScreen);
+                c = c.makeLaptop();
             }
 
             else

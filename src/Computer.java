@@ -21,11 +21,6 @@ public class Computer implements IDable {
         return memory;
     }
 
-    public void setId(String id)
-    {
-        this.id = id;
-    }
-
     public void setMake(String make)
     {
         this.make = make;
@@ -39,7 +34,7 @@ public class Computer implements IDable {
     @Override
     public void setID(String id)
     {
-
+        this.id = id;
     }
 
     public Computer()
@@ -56,18 +51,18 @@ public class Computer implements IDable {
 
     public String toString()
     {
-        return "ID:\t" + getId() +
+        return "ID:\t" + getId()+
                 "\nMake:\t" + getMake() +
                 "\nMemory Type:\t" + getMemory().getType() +
                 "\nMemory Size:\t" + getMemory().getSize();
     }
 
-    public static Laptop makeLaptop()
+    public Laptop makeLaptop()
     {
         String make = JOptionPane.showInputDialog("Enter make of laptop");
         String type = JOptionPane.showInputDialog("Enter type of memory");
         int size = Integer.parseInt(JOptionPane.showInputDialog("Enter amount of memory"));
-        boolean touchScreen = Boolean.parseBoolean(JOptionPane.showInputDialog("Do you want a touch screen (true or false"));
+        boolean touchScreen = Boolean.parseBoolean(JOptionPane.showInputDialog("Do you want a touch screen (true or false)"));
 
         Laptop l = new Laptop(make, type, size, touchScreen);
 
