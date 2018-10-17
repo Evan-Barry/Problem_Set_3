@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1db5cb5-4d1f-4a94-a77b-530e76244d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/t00202376.xml" afterDir="false" />
+    <list default="true" id="a1db5cb5-4d1f-4a94-a77b-530e76244d2d" name="Default Changelist" comment="Moved lodge, withdraw and calcTax from BankAccount abstract class to SavingsAccount concrete class an gave the methods code.&#10;&#10;Modified the Transactable interface class to reduce redundancy of public modifier and gave it necessary arguments.&#10;&#10;Modified the Taxable interface class to reduce redundancy of public modifier.&#10;&#10;Added code to SavingsAccountTest driver class to lodge and withdraw an amount from the SavingsAccount class and to display the tax">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/t00202376.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/t00202376.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Problem_Set_3/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Problem_Set_3/Computer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Problem_Set_3/ComputerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Problem_Set_3/ComputerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Problem_Set_3/Laptop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Problem_Set_3/Laptop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComputerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laptop.java" afterDir="false" />
@@ -19,9 +22,11 @@
     <session id="-1654335027">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3269" />
+          <entry key="java" value="3464" />
           <entry key="txt" value="473" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3269" />
+          <entry key="JAVA" value="3464" />
           <entry key="PLAIN_TEXT" value="473" />
         </counts>
       </usages-collector>
@@ -81,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IDable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -90,20 +95,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Computer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="315">
+              <caret line="68" column="112" selection-start-line="68" selection-start-column="108" selection-end-line="68" selection-end-column="112" />
               <folding>
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComputerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="86">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -121,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Laptop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="e#114#115#0" expanded="true" />
                 <element signature="e#148#149#0" expanded="true" />
@@ -136,8 +132,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="442">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,10 +172,10 @@
         <option value="$PROJECT_DIR$/src/Taxable.java" />
         <option value="$PROJECT_DIR$/src/Transactable.java" />
         <option value="$PROJECT_DIR$/src/Memory.java" />
-        <option value="$PROJECT_DIR$/src/Laptop.java" />
-        <option value="$PROJECT_DIR$/src/Computer.java" />
-        <option value="$PROJECT_DIR$/src/ComputerTest.java" />
         <option value="$PROJECT_DIR$/src/IDable.java" />
+        <option value="$PROJECT_DIR$/src/Computer.java" />
+        <option value="$PROJECT_DIR$/src/Laptop.java" />
+        <option value="$PROJECT_DIR$/src/ComputerTest.java" />
       </list>
     </option>
   </component>
@@ -179,8 +185,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="198" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -190,34 +196,52 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PS3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PS3" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem_Set_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PS3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PS3" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem_Set_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem_Set_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem_Set_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem_Set_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem_Set_3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539701147524" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ps2_1" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539786397557" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Problem_Set_0" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,6 +294,8 @@
       <workItem from="1539180224216" duration="4483000" />
       <workItem from="1539245626288" duration="4561000" />
       <workItem from="1539694998737" duration="6134000" />
+      <workItem from="1539785108515" duration="1550000" />
+      <workItem from="1539787543545" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="Moved lodge, withdraw and calcTax from BankAccount abstract class to SavingsAccount concrete class an gave the methods code.&#10;&#10;Modified the Transactable interface class to reduce redundancy of public modifier and gave it necessary arguments.&#10;&#10;Modified the Taxable interface class to reduce redundancy of public modifier.&#10;&#10;Added code to SavingsAccountTest driver class to lodge and withdraw an amount from the SavingsAccount class and to display the tax">
       <created>1539184757769</created>
@@ -282,13 +308,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15178000" />
+    <option name="totallyTimeSpent" value="17652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="198" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20897156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10501066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -297,7 +322,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33187294" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33147943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -340,16 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -382,16 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -409,17 +414,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComputerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/IDable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Laptop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
             <element signature="e#114#115#0" expanded="true" />
             <element signature="e#148#149#0" expanded="true" />
@@ -429,36 +451,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IDable.java">
+    <entry file="file://$PROJECT_DIR$/src/ComputerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        <state relative-caret-position="86">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Computer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="68" column="112" selection-start-line="68" selection-start-column="108" selection-end-line="68" selection-end-column="112" />
           <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>
       </provider>

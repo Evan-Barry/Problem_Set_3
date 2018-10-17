@@ -13,6 +13,8 @@ public class ComputerTest {
 
             if(compType == 'd' || compType == 'D')
             {
+                Computer.numOfComps++;
+
                 String make = JOptionPane.showInputDialog("Enter make of desktop");
                 String type = JOptionPane.showInputDialog("Enter type of memory");
                 int size = Integer.parseInt(JOptionPane.showInputDialog("Enter amount of memory"));
@@ -22,6 +24,8 @@ public class ComputerTest {
 
             else if(compType == 'l' || compType == 'L')
             {
+                Computer.numOfComps++;
+
                 c = c.makeLaptop();
             }
 

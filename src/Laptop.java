@@ -14,6 +14,7 @@ public class Laptop extends Computer {
 
     public Laptop(String make, String type, int size, boolean touchScreen)
     {
+        setID(Integer.toString(numOfComps));
         setMake(make);
         setMemory(new Memory(type, size));
         setTouchScreen(touchScreen);

@@ -2,6 +2,8 @@ import javax.swing.*;
 
 public class Computer implements IDable {
 
+    static int numOfComps = 0;
+
     private String id;
     private String make;
     protected Memory memory;
@@ -35,6 +37,7 @@ public class Computer implements IDable {
     public void setID(String id)
     {
         this.id = id;
+
     }
 
     public Computer()
@@ -45,6 +48,7 @@ public class Computer implements IDable {
 
     public Computer(String make, String memType, int memSize)
     {
+        setID(Integer.toString(numOfComps));
         setMake(make);
         setMemory(new Memory(memType, memSize));
     }
